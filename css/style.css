@@ -1,0 +1,471 @@
+:root {
+   --primary-color: #757575;
+   --secondary-color: #212121;
+   --accent-color:#2196F3;
+   --primary-bg-t-color: #ffffff ;
+   --seconadary-bg-color: #2F303A;
+   --logo-color-text: #000000;
+   --alternative-bg-color: #F5F4FA ;
+}
+
+
+
+/* 
+   акцент цвет #2196F3
+   фон в секции команда и некоторого текста #E5E5E5
+   вторичный цвет фона ( футера и секции героев) #2F303A;
+   цвет текста в лого: #000000;
+   цвет текста заголовков #212121
+   основной масив текста #757575;
+   основной фон bg и текст контраста #FFFFFF;
+   prymary font-family roboto 400,500,700,900
+   logo ff Raleway 700 
+   кнопка в секции герои при ховере #188CE8
+*/
+
+/* ======================================================================================================================================================== */
+/*  глобальные стили боди */
+
+
+body {
+   color: var(--primary-color);
+   font-family: 'Roboto', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   background-color: var(--primary-bg-t-color);
+}
+
+.container {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 15px;
+}
+
+.list {
+   list-style: none;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-left: 0px;
+}
+
+/* ====================================================================================================================================================== */
+
+/* шапка сайта */
+.header-container {
+   display: flex;
+   align-items: center;
+
+   border-bottom: 1px solid #ECECEC;
+}
+/* логотип */
+
+.logo {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   text-decoration: none;
+   color: var(--logo-color-text);
+   margin-right: 93px;
+}
+
+.logo:hover,
+.logo:focus {
+   color: var(--primary-color);
+}
+.logo>span { color: var(--accent-color); }
+
+
+
+/* site-nav */
+.site-nav .list {
+   display: flex;
+}
+
+.site-nav .link{
+   display: block;
+   color: var(--secondary-color);
+   font-weight: 500;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
+
+.list .list-item:not(:last-child) {
+   margin-right: 50px;
+}
+
+.site-nav .selected-link {
+   color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+   color: var(--accent-color);
+}
+
+
+/* header contacts */
+
+
+.contacts.list {
+   display: flex;
+   margin-left: auto;
+}
+
+.contact-item {
+   font-weight: 500;
+   letter-spacing: 0.02em;
+   text-decoration: none;
+   color: var(--primary-color);
+}
+
+.contact-item:hover, 
+.contact-item:focus {
+   color: var(--accent-color);
+}
+
+.contacts .items:not(:last-child) {
+   margin-right: 50px;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+/* sections */
+
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+
+.section-title {
+   margin-top: 0px;
+   margin-bottom: 50px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   color: var(--secondary-color);
+}
+
+/* фон секций герои и футер */
+
+
+.hero, .page-footer { background-color: var(--seconadary-bg-color); }
+
+
+
+/* герои  */
+.hero {
+   padding-top: 200px;
+   padding-bottom: 200px;
+   text-align: center;
+}
+
+.hero>h1 {
+   margin-top: 0px;
+   margin-bottom: 90px;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color: var(--primary-bg-t-color);
+   -webkit-text-stroke: 1px #000000;
+}
+
+
+
+
+
+
+/* заголовок имеет дефолтные стили браузера, по этмоу нужно переопределить явно */
+
+.features-list {
+   display: flex;
+   width: 1170px;
+}
+
+.features-list .list-item {
+   width: calc((100% - 90px)/4);
+}
+
+.features-list .list-item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.features-list .title {
+   margin-top: 0px;
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
+   color: var(--secondary-color);
+}
+
+.features-list .text {
+   line-height: 1.71;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+/* преимущества */
+.features-title {
+   display: none;
+}
+
+/* чем мы занимаемся  */
+
+
+.occupation-list {
+   display: flex;
+}
+
+
+.occupation-list .item:not(:last-child) {
+   margin-right: 30px;
+}
+
+
+
+/* наша команда */
+
+.team-list {
+   display: flex;
+   text-align: center;
+}
+
+
+
+.team-list .team-item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.team { background-color: var(--alternative-bg-color); }
+
+.list .team-item { 
+   background-color: var(--primary-bg-t-color);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+   0px 1px 1px rgba(0, 0, 0, 0.14),
+   0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+}
+
+
+.section .team-foto{
+   margin-bottom: 30px;
+}
+
+.section .team-title {
+   margin-top: 0;
+   margin-bottom: 10px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   color: var(--secondary-color);
+}
+.section .team-text {
+   margin-top: 0px;
+   margin-bottom: 30px;
+   font-size: 16px;
+   line-height: 1.19;
+}
+
+/* ============================================================================================================================================================ */
+
+
+/* футер */
+
+.page-footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.page-footer .logo{
+   margin-bottom: 20px;
+   display: inline-block;
+}
+
+
+.page-footer .contact-item {
+   font-weight: 400;
+   font-style: normal;
+   line-height: 1.71;
+   color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer .alt {
+   color: var(--primary-bg-t-color);
+   font-style: normal;
+}
+
+.contacts-list > .item:not(:last-child) {
+   display: block;
+   margin-bottom: 10px;
+}
+
+
+.page-footer .contact-item:hover ,
+.page-footer .contact-item:focus {
+   color: var(--accent-color);
+}
+
+.logo.alt:hover,
+.logo.alt:focus {
+   color:var(--accent-color) ;
+}
+
+.logo.alt>span:hover,
+.logo.alt>span:focus {
+   color:var(--primary-color) ;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* кнопка  "героев"*/
+
+.button {
+   padding: 10px 32px;
+   font-family:inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.06em;
+   color: var(--primary-bg-t-color);
+   background: var(--accent-color);
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+}
+
+.button:hover, 
+.button:focus {
+   color: var(--primary-bg-t-color);
+   background-color: #188CE8;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ====================================================================================================================================================================================================================================== */
+
+
+/* портофолио */
+
+
+.portfolio-title {
+   margin: 0px;
+   display: none; 
+   /* скрыл заголовок */
+}
+
+
+/* меню кнопок */
+
+.menu-list {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+
+.menu-list .item:not(:last-child) {
+   margin-right: 8px;
+}
+
+/* примеры робот */
+
+.work-list {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.work-item {
+   width: calc((100% - 60px) / 3);
+   border: 1px solid #EEEEEE;
+}
+
+.work-item:not(:nth-child(3n)) {
+   margin-right: 30px;
+}
+.work-item:not(:nth-last-child(-n + 3)) {
+   margin-bottom: 30px;
+}
+
+
+.card {
+   text-decoration: none;
+   display: block;
+}
+
+.card > img {
+   margin-bottom: 20px;
+}
+
+.card .title {
+   padding-left: 24px;
+   padding-right: 24px;
+   margin-top: 0px;
+   margin-bottom: 5px;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2.0;
+   letter-spacing: 0.06em;
+   color: var(--secondary-color);
+}
+
+.card .text {
+   padding-left: 24px;
+   padding-right: 24px;
+   margin-top: 0px;
+   margin-bottom: 20px;
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.03em;
+   color: var(--primary-color);
+}
+
+.card .description {
+   font-size: 18px;
+   line-height: 1.56;
+   letter-spacing: 0.03em;
+   color: var(--primary-bg-t-color);
+   background-color: rgba(33, 150, 243, 0.9);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* кнопки радио в портфолио*/
+
+
+.btm {
+   padding: 6px 22px;
+   display: inline-block;
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
+   letter-spacing: 0.03em;
+   color: var(--secondary-color);
+   background-color: var(--alternative-bg-color);
+   border-radius: 4px;
+   border: none;
+}
+
+.btm:hover, 
+.btm:focus {
+   color: var(--primary-bg-t-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   cursor: pointer;
+   }
+
+   /* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
