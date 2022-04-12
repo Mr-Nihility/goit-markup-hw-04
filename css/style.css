@@ -159,7 +159,7 @@ body {
 /* фон секций герои и футер */
 
 
-.hero, .page-footer { background-color: var(--seconadary-bg-color); }
+.page-footer { background-color: var(--seconadary-bg-color); }
 
 
 
@@ -167,6 +167,12 @@ body {
 .hero {
    padding-top: 200px;
    padding-bottom: 200px;
+
+   background-image:linear-gradient(to top ,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ) ,
+   url(../images/hero/hero.jpg) ;
+   background-color: var(--seconadary-bg-color);
+   background-position: center;
+   background-size: contain;
    text-align: center;
 }
 
@@ -180,7 +186,6 @@ body {
    letter-spacing: 0.06em;
    text-transform: uppercase;
    color: var(--primary-bg-t-color);
-   -webkit-text-stroke: 1px #000000;
 }
 
 
