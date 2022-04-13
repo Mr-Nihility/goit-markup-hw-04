@@ -236,16 +236,13 @@ body {
    display: inline-block;
    width: 70px;
    height: 70px;
-   margin-top: 25px;
-   margin-bottom: 25px;
-   margin-left: auto;
-   margin-right: auto;
 }
 .canvas {
    display: flex;
    background-color: #F5F4FA;
    margin-bottom: 30px;
    border-radius: 4px;
+   padding: 25px 100px;
 }
 
 .features-list .title {
@@ -369,12 +366,17 @@ body {
    display: flex;
 }
 
-.client-item {
+.client-item .link {
+   display: block;
    width: 170px;
    height: 92px;
    border: 1px solid #AFB1B8;
    box-sizing: border-box;
    border-radius: 4px;
+   padding-top: 16px;
+   padding-bottom: 16px;
+   padding-right: 32px;
+   padding-left: 32px;
 }
 
 .client-item:not(:last-child) {
@@ -382,7 +384,7 @@ body {
 }
 
 .client-icon {
-   margin: 16px 32px;
+
    display: block;
    width: 106px;
    height: 60px;
@@ -390,13 +392,13 @@ body {
 }
 
 
-.client-item:hover .client-icon ,
-.client-item:focus.client-icon {
+.client-item .link:hover .client-icon ,
+.client-item .link:focus.client-icon {
    fill: #2196F3;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-item .link:hover,
+.client-item .link:focus {
    border: 1px solid #2196F3;
 }
 
@@ -455,22 +457,25 @@ body {
 .logo.alt>span:focus {
    color:var(--primary-color) ;
 }
+
+
 /* section with socialmedia link */
 
 .socialmedia-container{
    margin-right: auto;
    align-items: flex-end;
+   padding-top: 12px;
 
 }
+
 .subtitle {
    font-weight: 700;
    font-size: 14px;
-   line-height: 16px;
+   line-height: 1.14;
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: var(--primary-bg-t-color);
    margin-bottom: 20px;
-   margin-top: 12px;
 }
 
 .page-footer .socialmedia-item {
@@ -482,7 +487,6 @@ body {
    height: 20px;
    fill: var(--primary-bg-t-color);
 }
-
 
 
 .socialmedia-item:hover,
@@ -550,7 +554,9 @@ body {
 
 .work-item {
    width: calc((100% - 60px) / 3);
-   border: 1px solid #EEEEEE;
+   border-bottom: 1px solid #EEEEEE;
+   border-right: 1px solid #EEEEEE;
+   border-left: 1px solid #EEEEEE;;
 }
 
 .work-item:not(:nth-child(3n)) {
