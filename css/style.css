@@ -50,6 +50,7 @@ body {
 }
 
 .link {
+  display: block;
   color: currentColor;
   margin: 0;
   text-decoration: none;
@@ -155,13 +156,14 @@ img {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
   /* color: var(--primary-color); */
 }
 
 .contact-icon {
-  vertical-align: bottom;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -211,6 +213,9 @@ img {
 
 /* герои  */
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -480,10 +485,6 @@ img {
 
 /* section with socialmedia link */
 
-.socialmedia-container {
-  margin-right: auto;
-}
-
 .subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -564,8 +565,8 @@ img {
   width: calc((100% - 60px) / 3);
 }
 
-.work-item:hover,
-.work-item:focus {
+.card:hover,
+.card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -575,11 +576,6 @@ img {
 }
 .work-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
-}
-
-.card {
-  text-decoration: none;
-  display: block;
 }
 
 .work-descr {
@@ -619,15 +615,14 @@ img {
 .btm {
   padding: 6px 22px;
   display: inline-block;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
   background-color: var(--alternative-bg-color);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .btm:hover,
@@ -636,7 +631,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
