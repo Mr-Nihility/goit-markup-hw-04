@@ -56,7 +56,15 @@ body {
    color: currentColor;
    margin: 0;
    text-decoration: none;
+
 }
+
+.text,
+.title {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
 /* утилита для картинок */
 img , svg {
    display: block;
@@ -90,28 +98,22 @@ img , svg {
 
 
 
-/* 
-
-
-
-
-
-
-
-====================================================================================================================================================== */
+/*====================================================================================================================================================== */
 
 /* шапка сайта */
+.hat {
+   border-bottom: 1px solid #ECECEC;
+}
+
 .header-container {
    display: flex;
    align-items: center;
-   border-bottom: 1px solid #ECECEC;
 }
+
 /* логотип */
 
 .logo {
    display: block;
-   /* padding-top: 24px;
-   padding-bottom: 24px; */
    font-family: 'Raleway', sans-serif;
    font-weight: 700;
    font-size: 26px;
@@ -143,7 +145,7 @@ img , svg {
    letter-spacing: 0.02em;
    text-decoration: none;
    padding-top: 32px;
-   padding-bottom: 32px;
+   padding-bottom: 31px;
 }
 
 .list .list-item:not(:last-child) {
@@ -172,6 +174,7 @@ img , svg {
 .contact-item {
    font-weight: 500;
    letter-spacing: 0.02em;
+   /* color: var(--primary-color); */
 }
 
 .contact-icon {
@@ -241,12 +244,12 @@ img , svg {
    background-repeat: no-repeat;
 }
 
-.main-title {
+.hero-title {
+   max-width: 696px;
+   margin-right: auto;
+   margin-left: auto;
    margin-top: 0px;
    margin-bottom: 30px;
-   margin-left: auto;
-   margin-right: auto;
-   width: 696px;
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -290,7 +293,6 @@ img , svg {
 }
 
 .features-list .title {
-   margin-top: 0px;
    margin-bottom: 10px;
    font-weight: 700;
    font-size: 14px;
@@ -301,17 +303,20 @@ img , svg {
 
 .features-list .text {
    line-height: 1.71;
-   margin-top: 0px;
-   margin-bottom: 0px;
 }
 
 /* преимущества */
-.features-title {
-   display: none;
+
+.section-advance {
+   padding-bottom: 47px;
 }
+
 
 /* чем мы занимаемся  */
 
+.section-occupation {
+   padding-top: 47px;
+}
 
 .occupation-list {
    display: flex;
@@ -329,6 +334,27 @@ img , svg {
 .team-list {
    display: flex;
    text-align: center;
+}
+
+.team-descr {
+   padding: 30px 10px;
+}
+
+.team-list .team-item:not(:last-child) {
+   margin-right: 30px;
+}
+
+
+.team {
+   background-color: var(--alternative-bg-color);
+}
+
+.list .team-item {
+   background-color: var(--primary-bg-t-color);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -368,25 +394,8 @@ img , svg {
    margin-right: 10px;
 }
 
-.team-list .team-item:not(:last-child) {
-   margin-right: 30px;
-}
 
 
-.team { background-color: var(--alternative-bg-color); }
-
-.list .team-item { 
-   background-color: var(--primary-bg-t-color);
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-   0px 1px 1px rgba(0, 0, 0, 0.14),
-   0px 2px 1px rgba(0, 0, 0, 0.2);
-   border-radius: 0px 0px 4px 4px;
-}
-
-
-.section .team-foto{
-   margin-bottom: 30px;
-}
 
 .section .team-title {
    margin-top: 0;
@@ -397,8 +406,6 @@ img , svg {
    color: var(--secondary-color);
 }
 .section .team-text {
-   margin-top: 0px;
-   margin-bottom: 16px;
    font-size: 16px;
    line-height: 1.19;
 }
@@ -572,8 +579,6 @@ img , svg {
 
 .portfolio-title {
    margin: 0px;
-   display: none; 
-   /* скрыл заголовок */
 }
 
 
@@ -598,9 +603,6 @@ img , svg {
 
 .work-item {
    width: calc((100% - 60px) / 3);
-   border-bottom: 1px solid #EEEEEE;
-   border-right: 1px solid #EEEEEE;
-   border-left: 1px solid #EEEEEE;;
 }
 
 .work-item:hover, 
@@ -623,14 +625,14 @@ img , svg {
    display: block;
 }
 
-.card > img {
-   margin-bottom: 20px;
+.work-descr {
+   padding: 20px 23px;
+   border: 1px solid #EEEEEE;
+   border-top: none;
 }
 
+
 .card .title {
-   margin-left: 24px;
-   /* margin-right: 24px; */
-   margin-top: 0px;
    margin-bottom: 5px;
    font-weight: 700;
    font-size: 18px;
@@ -640,23 +642,19 @@ img , svg {
 }
 
 .card .text {
-   margin-left: 24px;
-   /* margin-right: 24px; */
-   margin-top: 0px;
-   margin-bottom: 20px;
    font-size: 16px;
    line-height: 1.87;
    letter-spacing: 0.03em;
    color: var(--primary-color);
 }
 
-.card .description {
+/* .card .description {
    font-size: 18px;
    line-height: 1.56;
    letter-spacing: 0.03em;
    color: var(--primary-bg-t-color);
    background-color: rgba(33, 150, 243, 0.9);
-}
+} */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
