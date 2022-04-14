@@ -61,16 +61,18 @@
       <!--Heroes-->
       <section class="hero">
         <div class="container">
-          <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button">Заказать услугу</button>
         </div>
       </section>
 
       <!--преимущества-->
-      <section class="section">
+      <section class="section section-advance">
         <div class="container">
           <!-- заголовок секции для семантики -->
-          <h2 class="section-title features-title">Наши преимущества</h2>
+          <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">
+            Наши преимущества
+          </h2>
           <ul class="features-list list">
             <li class="list-item">
               <div class="canvas">
@@ -125,7 +127,7 @@
       </section>
 
       <!--чем мы занимаемся-->
-      <section class="section">
+      <section class="section section-occupation">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="occupation-list list">
@@ -169,67 +171,75 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Игорь Демьяненко</h3>
-              <p lang="en" class="team-text">Product Designer</p>
-              <!-- socialmedia-list -->
-              <ul class="socialmedia-list list">
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="instagram"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use
-                        wifth="20"
-                        heigth="20"
-                        href="./images/icons/symbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="twitter"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#twittter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="facebook"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="linkedin"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="team-descr">
+                <h3 class="team-title">Игорь Демьяненко</h3>
+                <p lang="en" class="team-text text">Product Designer</p>
+                <!-- socialmedia-list -->
+                <ul class="socialmedia-list list">
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          wifth="20"
+                          heigth="20"
+                          href="./images/icons/symbol-defs.svg#instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#twittter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -239,64 +249,72 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Ольга Репина</h3>
-              <p lang="en" class="team-text">Frontend Developer</p>
-              <ul class="socialmedia-list list">
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="instagram"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use
-                        href="./images/icons/symbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="twitter"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#twittter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="facebook"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="linkedin"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="team-descr">
+                <h3 class="team-title">Ольга Репина</h3>
+                <p lang="en" class="team-text text">Frontend Developer</p>
+                <ul class="socialmedia-list list">
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#twittter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -306,64 +324,72 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Николай Тарасов</h3>
-              <p lang="en" class="team-text">Marketing</p>
-              <ul class="socialmedia-list list">
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="instagram"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use
-                        href="./images/icons/symbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="twitter"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#twittter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="facebook"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="linkedin"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="team-descr">
+                <h3 class="team-title">Николай Тарасов</h3>
+                <p lang="en" class="team-text text">Marketing</p>
+                <ul class="socialmedia-list list">
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#twittter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -373,64 +399,72 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-title">Михаил Ермаков</h3>
-              <p lang="en" class="team-text">UI Designer</p>
-              <ul class="socialmedia-list list">
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="instagram"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use
-                        href="./images/icons/symbol-defs.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="twitter"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#twittter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="facebook"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socialmedia-item">
-                  <a
-                    class="link"
-                    href=""
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="linkedin"
-                  >
-                    <svg class="socialmedia-icon" width="20" heigth="20">
-                      <use href="./images/icons/symbol-defs.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              <div class="team-descr">
+                <h3 class="team-title">Михаил Ермаков</h3>
+                <p lang="en" class="team-text text">UI Designer</p>
+                <ul class="socialmedia-list list">
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="instagram"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="twitter"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#twittter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="facebook"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socialmedia-item">
+                    <a
+                      class="link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="linkedin"
+                    >
+                      <svg class="socialmedia-icon" width="20" heigth="20">
+                        <use
+                          href="./images/icons/symbol-defs.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>

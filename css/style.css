@@ -472,7 +472,8 @@ img , svg {
 
 .page-footer .logo{
    margin-bottom: 20px;
-   display: inline-block;
+   margin-right: 0;
+   display: block;
 }
 
 
